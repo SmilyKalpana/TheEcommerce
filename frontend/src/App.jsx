@@ -1,5 +1,4 @@
 import React from 'react'
-import { Route } from 'react-router'
 import Home from './pages/Home'
 import About from './pages/About'
 import Collection from './pages/Collection'
@@ -8,10 +7,12 @@ import Product from './pages/Product'
 import PlaceOrder from './pages/PlaceOrder'
 import Cart from './pages/Cart'
 import Login from './pages/Login'
-
+import Navbar from './components/Navbar'
+import { BrowserRouter as Route, Routes } from 'react-router'
 const App = () => {
   return (
-<div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+    <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      <Navbar />
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/collection" element={<Collection />} />

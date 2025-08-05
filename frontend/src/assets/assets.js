@@ -1,30 +1,31 @@
-import img01 from './assets/01.jpg';
-import img02 from './assets/02.jpg';
-import img03 from './assets/03.jpg';
-import img04 from './assets/04.jpg';
-import img05 from './assets/05.jpg';
-import img06 from './assets/06.jpg';
-import img07 from './assets/07.jpg';
-import img08 from './assets/08.jpg';
-import img09 from './assets/09.jpg';
-import img10 from './assets/10.jpg';
-import img11 from './assets/11.jpg';
-import img12 from './assets/12.jpg';
-import img13 from './assets/13.jpg';
-import img14 from './assets/14.jpg';
-import img15 from './assets/15.jpg';
-import img16 from './assets/16.jpg';
-import img17 from './assets/17.jpg';
-import img18 from './assets/18.jpg';
-import img19 from './assets/19.jpg';
-import img20 from './assets/20.jpg';
+import img01 from './01.jpg';
+import img02 from './02.jpg';
+import img03 from './03.jpg';
+import img04 from './04.jpg';
+import img05 from './05.jpg';
+import img06 from './06.jpg';
+import img07 from './07.jpg';
+import img08 from './08.jpg';
+import img09 from './09.jpg';
+import img10 from './10.jpg';
+import img11 from './11.jpg';
+import img12 from './12.jpg';
+import img13 from './13.jpg';
+import img14 from './14.jpg';
+import img15 from './15.jpg';
+import img16 from './16.jpg';
+import img17 from './17.jpg';
+import img18 from './18.jpg';
+import img19 from './19.jpg';
+import img20 from './20.jpg';
+import logo from './logo.jpg';
 
-import w1 from './assets/w1.jpg';
-import w2 from './assets/w2.jpg';
-import w3 from './assets/w3.jpg';
-import w4 from './assets/w4.jpg';
+import w1 from './w1.jpg';
+import w2 from './w2.jpg';
+import w3 from './w3.jpg';
+import w4 from './w4.jpg';
 
-import s1 from './assets/s1.jpg';
+import s1 from './s1.jpg';
 export const images = {
 
   img01,
@@ -48,6 +49,7 @@ export const images = {
   img19,
   img20,
   w1,
+  logo,
   w2,
   w3,
   w4,
