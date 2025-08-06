@@ -50,7 +50,7 @@ const Navbar = () => {
       {/* sidebar  for small screens */}
       <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0 '}`}>
         <div className="flex flex-col text-gray-600">
-          <div className="flex items-center gap-4 p-3">
+          <div onClick={()=>isVisible(false)} className="flex items-center gap-4 p-3">
             <AlignJustify className='h-4 rotate-180' />
             <p>Back</p>
           </div>
