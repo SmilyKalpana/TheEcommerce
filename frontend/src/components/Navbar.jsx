@@ -30,7 +30,8 @@ const Navbar = () => {
   return (
     <div className='navbar w-full top-0 left-0 fixed md:px-[10rem] sm:px-2   z-50 bg-[ #f0ede8]'>
       <div className="flex items-center justify-between ">
-        <img src={images.logo} className="w-28 h-28" alt="Logo" />
+        <img src={images.logo} className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32"
+          alt="Logo" />
         <ul className="sm:flex gap-4 hidden">
           {menuItems.map((menuItem) => (
             <NavLink key={menuItem.path}
@@ -42,9 +43,9 @@ const Navbar = () => {
           ))}
         </ul>
         <div className='flex justify-between gap-5'>
-          <Search className='cursor-pointer' />
+          <Search className='w-5 h-5 cursor-pointer p sm:w-4 sm:h-4 md:w-6 md:h-6 lg:w-6 lg:h-6' />
           <div className="group relative">
-            <UserRound className='cursor-pointer' />
+            <UserRound className='w-5 h-5 cursor-pointer sm:w-4 sm:h-4 md:w-6 md:h-6 lg:w-6 lg:h-6' />
             <div className="absolute group-hover:block hidden dropdown-menu right-0 pt-4">
               <div className="flex flex-col items-center gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
                 <p className="cursor-pointer hover:text-black capitalize hover:bg-amber-500 p-2 rounded-md">My profile</p>
@@ -54,10 +55,10 @@ const Navbar = () => {
             </div>
           </div>
           <div className='flex relative'>
-            <Handbag className='' />
+            <Handbag className="w-5 h-5 sm:w-4 sm:h-4 md:w-6 md:h-6  lg:w-6 lg:h-6" />
             <p className='absolute leading-4  bg-red-500 right-[-10px] top-[-10px] px-1 font-semibold aspect-square rounded-full text-white   text-[8px]'>10</p>
           </div>
-          <AlignJustify className='sm-hidden cursor-pointer' onClick={() => isVisible(true)} />
+          <AlignJustify className=' w-5 h-5 sm:hidden cursor-pointer' onClick={() => isVisible(true)} />
         </div>
         {/* sidebar  for small screens */}
         <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full fixed ' : 'w-0 '}`}>
