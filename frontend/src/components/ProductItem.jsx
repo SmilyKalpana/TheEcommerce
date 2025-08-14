@@ -11,7 +11,7 @@ const ProductItem = ({ id, image, name, price }) => {
             <div className="overflow-hidden  rounded-xl">
                 <img
                     src={images[image[0]]}
-                    className="w-full h-48 sm:h-56 md:h-64 lg:h-72 object-cover hover:scale-110 transition ease-in-out"
+                    className="w-full h-40 sm:h-56 md:h-64 lg:h-72 object-cover hover:scale-110 transition ease-in-out"
 
                     alt={name}
                 />

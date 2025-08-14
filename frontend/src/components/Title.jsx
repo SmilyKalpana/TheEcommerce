@@ -3,7 +3,7 @@ import React from 'react'
 const Title = ({ text1, text2 }) => {
     return (
         <div className='inline-flex gap-2 items-center mb-3'>
-            <p className="uppercase text-sm md:text-1xl lg:text-5xl text-amber-600 ">{text1}
+            <p className="uppercase text-xl sm:text-xl md:text-2xl lg:text-3xl text-amber-600 ">{text1}
                 <span className="text-gray-400 pl-2 font-medium ">
                     {text2}
                 </span>

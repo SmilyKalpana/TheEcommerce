@@ -21,7 +21,7 @@ const LatestCollection = () => {
                     Discover our latest collection of stylish accessories, crafted to add a touch of charm to every look. From scrunchies to statement jewelry, find your perfect match today.
                 </p>
             </div>
-            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4   gap-y-10'>
+            <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4  gap-y-10'>
                 {latestProducts.map((item, index) => (
                     <ProductItem key={index} id={item._id} image={item.image} name={item.name} price={item.price} />
                ))}

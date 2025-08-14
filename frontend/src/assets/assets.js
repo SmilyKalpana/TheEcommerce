@@ -26,6 +26,7 @@ import img25 from './25.jpeg';
 import img26 from './26.jpeg';
 import img27 from './27.jpeg';
 import logo from './logo.jpg';
+import logo2 from './logo2.png';
 
 import w1 from './w1.jpg';
 import w2 from './w2.jpg';
@@ -64,6 +65,7 @@ export const images = {
   img27,
   w1,
   logo,
+  logo2,
   w2,
   w3,
   w4,

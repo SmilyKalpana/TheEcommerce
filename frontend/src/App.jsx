@@ -11,6 +11,7 @@ import Cart from './pages/Cart';
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
 import Contact from './pages/Contact';
+import Footer from './components/footer';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+        <Footer/>
     </Router>
   );
 };
