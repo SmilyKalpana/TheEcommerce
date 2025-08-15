@@ -12,11 +12,19 @@ import Login from './pages/Login';
 import Navbar from './components/Navbar';
 import Contact from './pages/Contact';
 import Footer from './components/footer';
+import { images } from './assets/assets';
 
 const App = () => {
   return (
     <Router>
-      <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+      <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]" style={{
+        backgroundImage: `url(${images.pattern})`,
+        backgroundSize: "contain",
+        backgroundRepeat: "repeat",
+        backgroundColor: "rgba(255, 255, 255, 0.5)", // overlay effect
+        backgroundBlendMode: "overlay" // blends the overlay with the image
+      }}>
+
         <div className="pb-[7rem]">
           <Navbar />
         </div>
@@ -33,7 +41,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-        <Footer/>
+      <Footer />
     </Router>
   );
 };

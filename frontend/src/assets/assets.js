@@ -27,6 +27,7 @@ import img26 from './26.jpeg';
 import img27 from './27.jpeg';
 import logo from './logo.jpg';
 import logo2 from './logo2.png';
+import pattern from './p.jpg';
 
 import w1 from './w1.jpg';
 import w2 from './w2.jpg';
@@ -70,17 +71,17 @@ export const images = {
   w3,
   w4,
   s1,
+  pattern
 };
-export const products =
-[
-  // Scrunchies
+export const products = [
+  // Scrunchies (Hair Accessories)
   {
     _id: "img1",
     name: "Velvet Hair Scrunchie",
     description: "Soft velvet scrunchie perfect for all hair types. Gentle on hair, adds a stylish flair.",
     price: 50,
     image: ["img1"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Scrunchies",
     sizes: ["One Size"],
     date: 1716634346001,
@@ -92,7 +93,7 @@ export const products =
     description: "Smooth silk scrunchie with floral prints. Adds elegance to any outfit.",
     price: 70,
     image: ["img2"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Scrunchies",
     sizes: ["One Size"],
     date: 1716634346002,
@@ -104,7 +105,7 @@ export const products =
     description: "Set of 5 multicolor cotton scrunchies, ideal for daily use.",
     price: 120,
     image: ["img3"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Scrunchies",
     sizes: ["One Size"],
     date: 1716634346003,
@@ -116,21 +117,21 @@ export const products =
     description: "Trendy sheer scrunchie made from organza fabric. Perfect for party looks.",
     price: 65,
     image: ["img4"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Scrunchies",
     sizes: ["One Size"],
     date: 1716634346004,
     bestseller: false
   },
 
-  // Bows
+  // Bows (Hair Accessories)
   {
     _id: "img5",
     name: "Satin Bow Hair Clip",
     description: "Elegant satin bow clip to complement party and casual looks.",
     price: 60,
     image: ["img5"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Bows",
     sizes: ["One Size"],
     date: 1716634346101,
@@ -142,7 +143,7 @@ export const products =
     description: "Intricate lace bow with double layers for an elevated hair accessory.",
     price: 80,
     image: ["img6"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Bows",
     sizes: ["One Size"],
     date: 1716634346102,
@@ -154,7 +155,7 @@ export const products =
     description: "Cute polka dot bow available in vibrant colors. Ideal for everyday styling.",
     price: 55,
     image: ["img7"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Bows",
     sizes: ["One Size"],
     date: 1716634346103,
@@ -166,33 +167,33 @@ export const products =
     description: "Pack of 6 colorful mini bow clips. Great for kids and light hairstyles.",
     price: 90,
     image: ["img8"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Bows",
     sizes: ["One Size"],
     date: 1716634346104,
     bestseller: true
   },
 
-  // Hair Clips
+  // Hair Clips (Hair Accessories)
   {
     _id: "img9",
     name: "Floral Hair Clip Set",
     description: "Set of 3 floral-patterned hair clips. Strong grip and perfect for everyday wear.",
     price: 80,
     image: ["img9"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Hair Clips",
     sizes: ["One Size"],
     date: 1716634346201,
     bestseller: true
   },
-    {
+  {
     _id: "img10",
     name: "Velvet Knot Headband",
     description: "Soft velvet headband with knot design. Comfortable and stylish.",
     price: 85,
     image: ["img10"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Headbands",
     sizes: ["One Size"],
     date: 1716634346301,
@@ -204,7 +205,7 @@ export const products =
     description: "Elegant hair clip with embedded faux pearls for a luxurious touch.",
     price: 95,
     image: ["img11"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Hair Clips",
     sizes: ["One Size"],
     date: 1716634346202,
@@ -216,7 +217,7 @@ export const products =
     description: "Set of 10 assorted color metal snap clips. Durable and secure.",
     price: 110,
     image: ["img12"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Hair Clips",
     sizes: ["One Size"],
     date: 1716634346203,
@@ -228,21 +229,21 @@ export const products =
     description: "Gold-tone alligator-style clip, perfect for sleek and minimal hairstyles.",
     price: 75,
     image: ["img13"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Hair Clips",
     sizes: ["One Size"],
     date: 1716634346204,
     bestseller: true
   },
 
-  // Placeholder extra items to reach img27
+  // Headbands (Hair Accessories)
   {
     _id: "img14",
     name: "Velvet Knot Headband",
     description: "Soft velvet headband with knot design. Comfortable and stylish.",
     price: 85,
     image: ["img14"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Headbands",
     sizes: ["One Size"],
     date: 1716634346301,
@@ -254,7 +255,7 @@ export const products =
     description: "Chic headband adorned with faux pearls for an elegant look.",
     price: 100,
     image: ["img15"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Headbands",
     sizes: ["One Size"],
     date: 1716634346302,
@@ -266,19 +267,21 @@ export const products =
     description: "Stretchable wide headband for sports and casual wear.",
     price: 60,
     image: ["img16"],
-    category: "Accessories",
+    category: "Hair Accessories",
     subCategory: "Headbands",
     sizes: ["One Size"],
     date: 1716634346303,
     bestseller: false
   },
+
+  // Scarves (Style Accessories)
   {
     _id: "img17",
     name: "Floral Printed Scarf",
     description: "Lightweight scarf with floral prints, perfect for all seasons.",
     price: 120,
     image: ["img17"],
-    category: "Accessories",
+    category: "Style Accessories",
     subCategory: "Scarves",
     sizes: ["One Size"],
     date: 1716634346304,
@@ -290,7 +293,7 @@ export const products =
     description: "Smooth silk scarf for neck or hair styling.",
     price: 150,
     image: ["img18"],
-    category: "Accessories",
+    category: "Style Accessories",
     subCategory: "Scarves",
     sizes: ["One Size"],
     date: 1716634346305,
@@ -302,19 +305,21 @@ export const products =
     description: "Warm knitted scarf for cold weather fashion.",
     price: 200,
     image: ["img19"],
-    category: "Accessories",
+    category: "Style Accessories",
     subCategory: "Scarves",
     sizes: ["One Size"],
     date: 1716634346306,
     bestseller: true
   },
+
+  // Jewelry (Fashion Accessories)
   {
     _id: "img20",
     name: "Gold Hoop Earrings",
     description: "Classic gold-tone hoop earrings suitable for all outfits.",
     price: 95,
     image: ["img20"],
-    category: "Accessories",
+    category: "Fashion Accessories",
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346401,
@@ -326,7 +331,7 @@ export const products =
     description: "Elegant silver-tone stud earrings with crystal accents.",
     price: 85,
     image: ["img21"],
-    category: "Accessories",
+    category: "Fashion Accessories",
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346402,
@@ -338,7 +343,7 @@ export const products =
     description: "Trendy layered chain necklace with minimalist pendants.",
     price: 110,
     image: ["img22"],
-    category: "Accessories",
+    category: "Fashion Accessories",
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346403,
@@ -350,7 +355,7 @@ export const products =
     description: "Set of 4 colorful beaded bracelets for a casual boho look.",
     price: 75,
     image: ["img23"],
-    category: "Accessories",
+    category: "Fashion Accessories",
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346404,
@@ -362,19 +367,21 @@ export const products =
     description: "Minimalist adjustable ring for daily wear.",
     price: 55,
     image: ["img24"],
-    category: "Accessories",
+    category: "Fashion Accessories",
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346405,
     bestseller: false
   },
+
+  // Hats (Fashion Accessories)
   {
     _id: "img25",
     name: "Woolen Beanie Hat",
     description: "Cozy woolen beanie hat for winter.",
     price: 130,
     image: ["img25"],
-    category: "Accessories",
+    category: "Fashion Accessories",
     subCategory: "Hats",
     sizes: ["One Size"],
     date: 1716634346501,
@@ -386,7 +393,7 @@ export const products =
     description: "Stylish wide-brim hat for sun protection.",
     price: 180,
     image: ["img26"],
-    category: "Accessories",
+    category: "Fashion Accessories",
     subCategory: "Hats",
     sizes: ["One Size"],
     date: 1716634346502,
@@ -398,10 +405,11 @@ export const products =
     description: "Casual baseball cap for everyday wear.",
     price: 90,
     image: ["img27"],
-    category: "Accessories",
+    category: "Fashion Accessories",
     subCategory: "Hats",
     sizes: ["One Size"],
     date: 1716634346503,
     bestseller: true
   }
 ];
+

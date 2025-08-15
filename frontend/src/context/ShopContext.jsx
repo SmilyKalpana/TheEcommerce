@@ -1,5 +1,5 @@
 
-import React, { createContext } from 'react'
+import React, { createContext, useState } from 'react'
 
 export const ShopContext = createContext()
 import { products } from '../assets/assets'
@@ -7,6 +7,7 @@ import { products } from '../assets/assets'
 const ShopContextProvider = (props) => {
   const currency = "QAR";
   const delivery_fee =10;
+  const [search,setSearch] =useState('');
   const value={
     products,currency,delivery_fee
   }
@@ -22,4 +23,4 @@ const ShopContextProvider = (props) => {
   )
 }
 
-export default ShopContextProvider;
+export default ShopContextProvider; 
