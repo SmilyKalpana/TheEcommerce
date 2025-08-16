@@ -48,7 +48,22 @@ const Footer = () => {
           <p className="text-sm">✉️ info@smilies.com</p>
         </div>
       </div>
-<hr className='text-gray-400 my-4' />
+
+      <hr className='text-gray-400 my-4' />
+
+      {/* Social Media Links */}
+      {/* <div className="flex justify-center gap-6 mb-4">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <FaFacebook className="text-2xl hover:text-amber-600 transition-colors" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <FaInstagram className="text-2xl hover:text-amber-600 transition-colors" />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <FaTwitter className="text-2xl hover:text-amber-600 transition-colors" />
+        </a>
+      </div> */}
+
       {/* Footer Bottom */}
       <p className="text-center text-gray-400 text-sm mt-6">
         © 2025 smilies.com — All Rights Reserved

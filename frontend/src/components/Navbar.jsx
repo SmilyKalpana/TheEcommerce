@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { images } from '../assets/assets';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { Handbag, Search, UserRound, AlignJustify } from 'lucide-react'
+import { ShopContext } from '../context/ShopContext';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
   const [visible, isVisible] = useState(false)
+  const {search,setSearch,setShowSearch,showSearch}=useContext(ShopContext)
   useEffect(() => {
     const isScrolled = () => {
       if (window.scrollY > 50) {
@@ -19,6 +21,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", isScrolled)
 
   }, []);
+  const Navigate =useNavigate();
   const menuItems = [
 
 
@@ -30,7 +33,7 @@ const Navbar = () => {
   return (
     <div className='navbar w-full top-0 left-0 fixed md:px-[10rem] sm:px-2   z-50 bg-[ #f0ede8]'>
       <div className="flex items-center justify-between ">
-        <img src={images.logo} className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32"
+        <img onClick={()=>Navigate('/')} src={images.logo} className="cursor-pointer w-20 h-20 sm:w-24 md:w-28  lg:w-32  sm:h-24  md:h-28 lg:h-32"
           alt="Logo" />
         <ul className="sm:flex gap-4 hidden">
           {menuItems.map((menuItem) => (
@@ -43,7 +46,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className='flex justify-between gap-5'>
-          <Search className='w-5 h-5 cursor-pointer p sm:w-4 sm:h-4 md:w-6 md:h-6 lg:w-6 lg:h-6' />
+          <Search className='w-5 h-5 cursor-pointer p sm:w-4 sm:h-4 md:w-6 md:h-6 lg:w-6 lg:h-6' onClick={()=>setShowSearch(true)} />
           <div className="group relative">
             <UserRound className='w-5 h-5 cursor-pointer sm:w-4 sm:h-4 md:w-6 md:h-6 lg:w-6 lg:h-6' />
             <div className="absolute group-hover:block hidden dropdown-menu right-0 pt-4">
@@ -67,8 +70,8 @@ const Navbar = () => {
               <AlignJustify className='h-4 rotate-180' />
               <p>Back</p>
             </div>
-            {menuItems.map((menuItem) => (
-              <NavLink onClick={() => isVisible(false)} className="py-2 pl-6 hover:bg-amber-600 hover:text-gray-900" to={menuItem.path}>{menuItem.label}</NavLink>
+            {menuItems.map((menuItem,index) => (
+              <NavLink key={index} onClick={() => isVisible(false)} className="py-2 pl-6 hover:bg-amber-600 hover:text-gray-900" to={menuItem.path}>{menuItem.label}</NavLink>
             ))}
           </div>
         </div>
