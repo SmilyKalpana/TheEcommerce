@@ -41,6 +41,10 @@ const Collection = () => {
 
     setFilterProducts(productsCopy)
   }
+  const uniqueCategories =
+    [...new Set(products.map((item) => item.category))]
+
+  const uniqueSubCategories = [...new Set(products.map((item) => item.subCategory))]
 
 
   const sortProduct = () => {
@@ -61,7 +65,7 @@ const Collection = () => {
     applyfilter();
   }, [category, subCategory])
 
-useEffect(() => {
+  useEffect(() => {
     sortProduct();
   }, [sortType])
 
@@ -75,59 +79,45 @@ useEffect(() => {
           <CircleArrowRight className={`h-5 sm:hidden ${showFilter ? "rotate-90" : ""}`} />
         </p>
         {/* Category filter */}
+
         <div className={`px-4 py-4 ${showFilter ? "" : "hidden"} sm:block`}>
           <p className='uppercase'>Categories</p>
-          <div className='flex flex-col gap-1 pt-4'>
-
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Hair Accessories'} onChange={toggleCategory} />
-              Hair Accessories</p>
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Fashion Accessories'} onChange={toggleCategory} />
-              Fashion Accessories</p>
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Style Accessories'} onChange={toggleCategory} />
-              Style Accessories</p>
-          </div>
+          {uniqueCategories.map((category, index) => (
+            <div key={index} className='flex flex-col gap-1 pt-4'>
+              <label className='flex items-center hover:text-lg text-base cursor-pointer hover:rounded hover:border-gray-400 hover:bg-gray-100 gap-3'>
+                <input
+                  className='w-3'
+                  type='checkbox'
+                  value={category}
+                  onChange={toggleCategory}
+                />
+                {category}
+              </label>
+            </div>
+          ))}
         </div>
+
         {/* SubCategory */}
         <div className={` text-base px-4 py-4 mt-4 ${showFilter ? " " : "hidden"} sm:block`}>
           <p className='uppercase'>SubCatergories</p>
-          <div className='flex flex-col gap-1 pt-4'>
+          {uniqueSubCategories.map((subCategory, index) => (
+            <div key={index} className='flex flex-col gap-1 pt-4'>
+              <label className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
+                <input className='w-3' type='checkbox' value={subCategory} onChange={toggleSubCategory} />
+                {subCategory}</label>
+            </div>
+          ))}
 
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Scrunchies'} onChange={toggleSubCategory} />
-              Scrunchies</p>
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Headbands'} onChange={toggleSubCategory} />
-              Headbands</p>
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Scarves'} onChange={toggleSubCategory} />
-              Scarves</p>
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Bows'} onChange={toggleSubCategory} />
-              Bows</p>
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Hair Clips'} onChange={toggleSubCategory} />
-              Hair Clips
-            </p>
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Jewelry'} onChange={toggleSubCategory} />
-              Jewelry</p>
-            <p className='flex hover:text-lg text-base cursor-pointer hover:border-rounded  hover:border-gray-400 hover:bg-gray-100 gap-3'>
-              <input className='w-3' type='checkbox' value={'Hats'} onChange={toggleSubCategory} />
-              Hats</p>
-          </div>
         </div>
       </div>
       <div className='flex-1'>
         <div className='flex justify-between flex-col sm:flex-row'>
           <Title text1="All" text2="Collections" />
           {/* Product Sort */}
-          <select onChange={(e)=>setSortType(e.target.value)} className='capitalize' >
+          <select onChange={(e) => setSortType(e.target.value)} className='capitalize border-none ' >
             <option value="relavent">Relavent</option>
             <option value="Low-High">Low to High</option>
-            <option value="Hight-Low">High to Low</option>
+            <option value="High-Low">High to Low</option>
           </select>
         </div>
         {/* MAPPING PRODUCTS */}
@@ -146,4 +136,3 @@ useEffect(() => {
 }
 
 export default Collection
-
