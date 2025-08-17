@@ -11,15 +11,15 @@ const Footer = () => {
   ];
 
   return (
-    <div className="py-8 bg-gray-50">
+    <div className="custom-primary py-8">
       <div className="flex flex-col sm:flex-row justify-evenly items-center gap-8 px-6">
-        
+
         {/* Logo + Brand Info */}
         <div className="w-64">
           <img src={images.logo2} alt="Smilies Logo" className="w-32 h-32 mb-3" />
           <p className="whitespace-normal text-justify text-gray-600 text-sm leading-relaxed">
-            Smilies is a vibrant scrunchies and hair accessories brand that blends style, comfort, 
-            and durability. From playful everyday looks to chic statement pieces, each accessory is 
+            Smilies is a vibrant scrunchies and hair accessories brand that blends style, comfort,
+            and durability. From playful everyday looks to chic statement pieces, each accessory is
             designed to add a touch of charm and personality to your hairstyle.
           </p>
         </div>

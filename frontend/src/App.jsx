@@ -15,7 +15,7 @@ const PlaceOrder = React.lazy(() => import('./pages/PlaceOrder'));
 const Cart = React.lazy(() => import('./pages/Cart'));
 const Login = React.lazy(() => import('./pages/Login'));
 const Contact = React.lazy(() => import('./pages/Contact'));
-const NotFound = React.lazy(() => import('./pages/NotFound'));  // Your custom 404 page
+const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 const App = () => {
   return (
@@ -38,7 +38,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/collection" element={<Collection />} />
             <Route path="/orders" element={<Orders />} />
-            <Route path="/product/:ProductId" element={<Product />} />
+            <Route path="/product/:productId" element={<Product />} />
             <Route path="/place-order" element={<PlaceOrder />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
@@ -46,8 +46,8 @@ const App = () => {
             <Route path="*" element={<NotFound />} /> {/* Fallback route */}
           </Routes>
         </Suspense>
-        <Footer />
       </div>
+      <Footer />
     </Router>
   );
 };

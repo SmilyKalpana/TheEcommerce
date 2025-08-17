@@ -6,11 +6,11 @@ import { products } from '../assets/assets'
 
 const ShopContextProvider = (props) => {
   const currency = "QAR";
-  const delivery_fee =10;
-  const [search,setSearch] =useState('');
-  const [showSearch,setShowSearch] =useState(false);
-  const value={
-    products,currency,delivery_fee,search,setSearch,showSearch,setShowSearch
+  const delivery_fee = 10;
+  const [search, setSearch] = useState('');
+  const [showSearch, setShowSearch] = useState(false);
+  const value = {
+    products, currency, delivery_fee, search, setSearch, showSearch, setShowSearch
   }
 
 
@@ -19,9 +19,9 @@ const ShopContextProvider = (props) => {
       <ShopContext.Provider value={value}>
         {props.children}
       </ShopContext.Provider>
-      
-      </div>
+
+    </div>
   )
 }
 
-export default ShopContextProvider; 
+export default ShopContextProvider;
