@@ -84,7 +84,9 @@ export const products = [
     subCategory: "Scrunchies",
     sizes: ["One Size"],
     date: 1716634346001,
-    bestseller: true
+    bestseller: true,
+    rating: 4.6,
+    reviews: 120
   },
   {
     _id: "img2",
@@ -96,7 +98,9 @@ export const products = [
     subCategory: "Scrunchies",
     sizes: ["One Size"],
     date: 1716634346002,
-    bestseller: false
+    bestseller: false,
+    rating: 4.3,
+    reviews: 85
   },
   {
     _id: "img3",
@@ -108,7 +112,9 @@ export const products = [
     subCategory: "Scrunchies",
     sizes: ["One Size"],
     date: 1716634346003,
-    bestseller: true
+    bestseller: true,
+    rating: 4.8,
+    reviews: 200
   },
   {
     _id: "img4",
@@ -120,7 +126,9 @@ export const products = [
     subCategory: "Scrunchies",
     sizes: ["One Size"],
     date: 1716634346004,
-    bestseller: false
+    bestseller: false,
+    rating: 4.2,
+    reviews: 70
   },
 
   // Bows (Hair Accessories)
@@ -134,7 +142,9 @@ export const products = [
     subCategory: "Bows",
     sizes: ["One Size"],
     date: 1716634346101,
-    bestseller: false
+    bestseller: false,
+    rating: 4.1,
+    reviews: 60
   },
   {
     _id: "img6",
@@ -146,7 +156,9 @@ export const products = [
     subCategory: "Bows",
     sizes: ["One Size"],
     date: 1716634346102,
-    bestseller: true
+    bestseller: true,
+    rating: 4.7,
+    reviews: 140
   },
   {
     _id: "img7",
@@ -158,7 +170,9 @@ export const products = [
     subCategory: "Bows",
     sizes: ["One Size"],
     date: 1716634346103,
-    bestseller: false
+    bestseller: false,
+    rating: 4.3,
+    reviews: 90
   },
   {
     _id: "img8",
@@ -170,7 +184,9 @@ export const products = [
     subCategory: "Bows",
     sizes: ["One Size"],
     date: 1716634346104,
-    bestseller: true
+    bestseller: true,
+    rating: 4.6,
+    reviews: 160
   },
 
   // Hair Clips (Hair Accessories)
@@ -184,7 +200,9 @@ export const products = [
     subCategory: "Hair Clips",
     sizes: ["One Size"],
     date: 1716634346201,
-    bestseller: true
+    bestseller: true,
+    rating: 4.8,
+    reviews: 190
   },
   {
     _id: "img10",
@@ -196,7 +214,9 @@ export const products = [
     subCategory: "Headbands",
     sizes: ["One Size"],
     date: 1716634346301,
-    bestseller: false
+    bestseller: false,
+    rating: 4.2,
+    reviews: 75
   },
   {
     _id: "img11",
@@ -208,7 +228,9 @@ export const products = [
     subCategory: "Hair Clips",
     sizes: ["One Size"],
     date: 1716634346202,
-    bestseller: false
+    bestseller: false,
+    rating: 4.5,
+    reviews: 110
   },
   {
     _id: "img12",
@@ -220,7 +242,9 @@ export const products = [
     subCategory: "Hair Clips",
     sizes: ["One Size"],
     date: 1716634346203,
-    bestseller: false
+    bestseller: false,
+    rating: 4.1,
+    reviews: 80
   },
   {
     _id: "img13",
@@ -232,7 +256,9 @@ export const products = [
     subCategory: "Hair Clips",
     sizes: ["One Size"],
     date: 1716634346204,
-    bestseller: true
+    bestseller: true,
+    rating: 4.6,
+    reviews: 145
   },
 
   // Headbands (Hair Accessories)
@@ -246,7 +272,9 @@ export const products = [
     subCategory: "Headbands",
     sizes: ["One Size"],
     date: 1716634346301,
-    bestseller: false
+    bestseller: false,
+    rating: 4.2,
+    reviews: 75
   },
   {
     _id: "img15",
@@ -258,7 +286,9 @@ export const products = [
     subCategory: "Headbands",
     sizes: ["One Size"],
     date: 1716634346302,
-    bestseller: true
+    bestseller: true,
+    rating: 4.8,
+    reviews: 180
   },
   {
     _id: "img16",
@@ -270,7 +300,9 @@ export const products = [
     subCategory: "Headbands",
     sizes: ["One Size"],
     date: 1716634346303,
-    bestseller: false
+    bestseller: false,
+    rating: 4.3,
+    reviews: 95
   },
 
   // Scarves (Style Accessories)
@@ -284,7 +316,9 @@ export const products = [
     subCategory: "Scarves",
     sizes: ["One Size"],
     date: 1716634346304,
-    bestseller: true
+    bestseller: true,
+    rating: 4.7,
+    reviews: 160
   },
   {
     _id: "img18",
@@ -296,7 +330,9 @@ export const products = [
     subCategory: "Scarves",
     sizes: ["One Size"],
     date: 1716634346305,
-    bestseller: false
+    bestseller: false,
+    rating: 4.4,
+    reviews: 120
   },
   {
     _id: "img19",
@@ -308,7 +344,9 @@ export const products = [
     subCategory: "Scarves",
     sizes: ["One Size"],
     date: 1716634346306,
-    bestseller: true
+    bestseller: true,
+    rating: 4.9,
+    reviews: 210
   },
 
   // Jewelry (Fashion Accessories)
@@ -322,7 +360,9 @@ export const products = [
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346401,
-    bestseller: false
+    bestseller: false,
+    rating: 4.3,
+    reviews: 100
   },
   {
     _id: "img21",
@@ -334,7 +374,9 @@ export const products = [
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346402,
-    bestseller: true
+    bestseller: true,
+    rating: 4.7,
+    reviews: 170
   },
   {
     _id: "img22",
@@ -346,7 +388,9 @@ export const products = [
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346403,
-    bestseller: false
+    bestseller: false,
+    rating: 4.5,
+    reviews: 130
   },
   {
     _id: "img23",
@@ -358,7 +402,9 @@ export const products = [
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346404,
-    bestseller: true
+    bestseller: true,
+    rating: 4.6,
+    reviews: 150
   },
   {
     _id: "img24",
@@ -370,7 +416,9 @@ export const products = [
     subCategory: "Jewelry",
     sizes: ["One Size"],
     date: 1716634346405,
-    bestseller: false
+    bestseller: false,
+    rating: 4.2,
+    reviews: 90
   },
 
   // Hats (Fashion Accessories)
@@ -384,7 +432,9 @@ export const products = [
     subCategory: "Hats",
     sizes: ["One Size"],
     date: 1716634346501,
-    bestseller: true
+    bestseller: true,
+    rating: 4.8,
+    reviews: 175
   },
   {
     _id: "img26",
@@ -396,7 +446,9 @@ export const products = [
     subCategory: "Hats",
     sizes: ["One Size"],
     date: 1716634346502,
-    bestseller: false
+    bestseller: false,
+    rating: 4.4,
+    reviews: 105
   },
   {
     _id: "img27",
@@ -408,6 +460,8 @@ export const products = [
     subCategory: "Hats",
     sizes: ["One Size"],
     date: 1716634346503,
-    bestseller: true
+    bestseller: true,
+    rating: 4.7,
+    reviews: 160
   }
 ];
