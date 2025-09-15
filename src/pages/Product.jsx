@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ShopContext } from '../context/ShopContext';
-import { Star, StarHalf, Star as StarEmpty } from "lucide-react";
+import { Star, StarHalf, Star as StarEmpty, Truck, ShieldCheck, PackageIcon } from "lucide-react";
 import { images } from '../assets/assets';
 import StarRating from '../components/Star';
 
@@ -40,12 +40,12 @@ const Product = () => {
         {/* Right: Product Details */}
         <div className="flex flex-col justify-center gap-4 md:gap-2 lg:w-1/2 ">
           <h2 className="text-xl md:text-3xl font-semibold capitalize text-pink-600">{productData.name}</h2>
-            <div className="flex flex-row gap-1 mt-1 bg-pink-200 w-fit px-2 py-1 rounded-lg ">
+            <div className="flex flex-row gap-1 bg-pink-200 w-fit px-2 rounded-lg ">
               <StarRating rating={productData.rating}   />
               <p>({productData.reviews})</p>
             </div>
 
-          <h6 className="text-xl  font-medium mt-4">
+          <h6 className="text-xl  font-medium">
              <span className="text-pink-600">{productData.price} {currency}</span>
           </h6>
           <p className="text-lg md:text-xl text-gray-600   mt-4 capitalize">{productData.description}</p>
@@ -77,7 +77,13 @@ const Product = () => {
           >
             Add to Cart
           </button>
-        </div>
+      <hr className=' mt-4 sm:w-4/5 text-gray-200'/>
+      <div className=' text-gray-600 flex flex-row mt-4 pt-4 gap-2 text-sm sm:text-base '>
+        <p><ShieldCheck/> 100% Quality Assurance</p>
+        <p><Truck/> Cash on Delivery Available</p>
+        <p> <PackageIcon/>Easy return and Exchange policy with 7 days</p>
+      </div>
+        </div>  
       </div>
     </div>
   );
